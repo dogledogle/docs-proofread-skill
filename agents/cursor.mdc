@@ -1,0 +1,31 @@
+---
+description: Audit and proofread documentation, translations, Markdown/MDX, links, terminology, and mixed Chinese/English technical writing.
+globs:
+  - "**/*.md"
+  - "**/*.mdx"
+  - "**/*.rst"
+  - "**/*.txt"
+  - "**/*.html"
+  - "**/*.htm"
+  - "**/*.vue"
+  - "**/*.ts"
+  - "**/*.tsx"
+  - "**/*.js"
+  - "**/*.jsx"
+alwaysApply: false
+---
+
+# Docs Proofreader Cursor Rule
+
+When asked to audit, proofread, review, or report issues in documentation, follow the canonical Docs Proofreader workflow in `SKILL.md`.
+
+- Define the audit scope before reporting issues.
+- Preserve source evidence with paths, lines, URLs, anchors, or nearby headings.
+- Infer local documentation style before reporting style-only issues.
+- Check terminology consistency, translation accuracy, typos, casing, punctuation, Chinese/English spacing, Markdown/MDX structure, links, and code sample formatting.
+- Read `references/report-format.md` before writing the final report.
+- Read `references/review-checklist.md` when reviewing Chinese technical docs, translated docs, or mixed Chinese/English docs.
+- Use `scripts/collect_docs.py`, `scripts/check_links.py`, and `scripts/validate_report.py` when they reduce repetitive work.
+- Produce a Markdown issue report by default. Do not modify audited docs unless the user separately asks for fixes.
+
+Default report language is Chinese. Include an English Conventional Commit-style commit description for every issue.
