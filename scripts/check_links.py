@@ -89,7 +89,7 @@ def check_local(link: dict[str, object]) -> dict[str, object]:
 
 def http_request(url: str, timeout: int) -> tuple[int, str]:
     for method in ("HEAD", "GET"):
-        request = urllib.request.Request(url, method=method, headers={"User-Agent": "docs-proofreader/1.0"})
+        request = urllib.request.Request(url, method=method, headers={"User-Agent": "docs-proofreader-skill/1.0"})
         try:
             with urllib.request.urlopen(request, timeout=timeout) as response:
                 return response.status, response.geturl()

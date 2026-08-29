@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Validate the shape of a docs-proofreader Markdown report."""
+"""Validate the shape of a docs-proofreader-skill Markdown report."""
 
 from __future__ import annotations
 

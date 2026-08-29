@@ -1,4 +1,4 @@
 interface:
-  display_name: "Docs Proofreader"
-  short_description: "Audit docs and produce Markdown fix reports"
-  default_prompt: "Use $docs-proofreader to audit these docs and write a Markdown issue report."
+  display_name: "Docs Proofreader Skill"
+  short_description: "Audit docs and write evidence-based Markdown reports"
+  default_prompt: "Use $docs-proofreader-skill to audit these docs and write a Markdown issue report."

@@ -122,7 +122,7 @@ def collect_local(target: Path, extensions: set[str], includes: list[str], exclu
 
 
 def fetch_url(url: str, timeout: int) -> tuple[str, str]:
-    request = urllib.request.Request(url, headers={"User-Agent": "docs-proofreader/1.0"})
+    request = urllib.request.Request(url, headers={"User-Agent": "docs-proofreader-skill/1.0"})
     with urllib.request.urlopen(request, timeout=timeout) as response:
         content_type = response.headers.get("Content-Type", "")
         raw = response.read()
