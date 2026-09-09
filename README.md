@@ -1,10 +1,10 @@
 # Docs Proofreader Skill
 
-这是一个只面向 Codex 的文档审校 skill。它把文档问题转化为有证据、可定位、可执行的 Markdown 报告，适用于本地文档、在线文档、翻译文档、Markdown/MDX、源码中的文档注释，以及中英混排技术内容。
+这是一个文档审校 skill。它把文档问题转化为有证据、可定位、可执行的 Markdown 报告，适用于本地文档、在线文档、翻译文档、Markdown/MDX、源码中的文档注释，以及中英混排技术内容。
 
 ## 使用方式
 
-将整个 skill 目录放入 Codex 的 skills 目录，例如：
+将整个 skill 目录放入所用 AI 编码助手的 skills 目录，以 Codex 为例：
 
 ```text
 %CODEX_HOME%/skills/docs-proofreader-skill/
@@ -12,7 +12,7 @@
 
 未设置 `CODEX_HOME` 时，Windows 通常使用 `%USERPROFILE%/.codex/skills/docs-proofreader-skill/`。
 
-在 Codex 中使用 `$docs-proofreader-skill`，或直接提出文档审校请求。skill 默认只审校、不修改原文档；如需修复，应在审校报告完成后明确提出。
+可通过 `$docs-proofreader-skill` 显式调用（在支持的智能体中），或直接提出文档审校请求。skill 默认只审校、不修改原文档；如需修复，应在审校报告完成后明确提出。
 
 ## 能力范围
 
@@ -55,4 +55,4 @@ python scripts/check_links.py <path> [--check-http]
 python scripts/validate_report.py <report.md>
 ```
 
-脚本用于收集证据和减少重复工作，不能替代 Codex 对上下文、项目风格和问题影响的判断。
+脚本用于收集证据和减少重复工作，不能替代对上下文、项目风格和问题影响的实际判断。
